@@ -1,7 +1,7 @@
 import React from "react";
-export function Form({ inputHandler }) {
+export function Form({ inputHandler, submitHandler }) {
   return (
-    <>
+    <form onSubmit={submitHandler}>
       <label htmlFor="firstName">First name:</label>
       <input
         type="text"
@@ -9,6 +9,7 @@ export function Form({ inputHandler }) {
         name="firstName"
         onChange={inputHandler}
       />
+
       <label htmlFor="lastName">Last name:</label>
       <input
         type="text"
@@ -16,6 +17,7 @@ export function Form({ inputHandler }) {
         name="lastName"
         onChange={inputHandler}
       />
+
       <label htmlFor="phoneNumber">Phone Number:</label>
       <input
         type="tel"
@@ -40,7 +42,9 @@ export function Form({ inputHandler }) {
         cols="50"
         placeholder="Add message here.."
         onChange={inputHandler}
-      ></textarea>
-    </>
+      />
+
+      <button type="submit">Submit</button>
+    </form>
   );
 }

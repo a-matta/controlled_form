@@ -15,10 +15,18 @@ export default class App extends Component {
     this.setState({ [e.target.name]: e.target.value });
   };
 
+  submitHandler = (e) => {
+    e.preventDefault();
+    console.log("Form Submitted");
+  };
+
   render() {
     return (
       <div>
-        <Form inputHandler={this.inputHandler} />
+        <Form
+          inputHandler={this.inputHandler}
+          submitHandler={this.submitHandler}
+        />
         <View {...this.state} />
       </div>
     );
