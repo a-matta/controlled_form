@@ -1,3 +1,4 @@
+import { View } from "./View";
 import React, { Component } from "react";
 
 export default class App extends Component {
@@ -56,11 +57,7 @@ export default class App extends Component {
           onChange={this.inputHandler}
         ></textarea>
 
-        <h1>Firstname={this.state.firstName}</h1>
-        <h1>LastName={this.state.lastName}</h1>
-        <h1>PhoneNumber={this.state.phoneNumber}</h1>
-        <h1>Role={this.state.role}</h1>
-        <h1>Message={this.state.message}</h1>
+        <View {...this.state} />
       </div>
     );
   }
