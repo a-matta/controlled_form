@@ -1,0 +1,12 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "firstname": "Luke",
+      "lastname": "Hodgson",
+      "phonenumber": "3043938720",
+      "role": "teacher",
+      "message": "I was generated with fakenamegenerator.com"
+    }
+  ]
+}
