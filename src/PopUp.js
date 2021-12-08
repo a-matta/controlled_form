@@ -1,6 +1,17 @@
 import React from "react";
 
-export function PopUp({ firstName, lastName, phoneNumber, role, message }) {
+const closeHandler = () => {
+  window.location.reload();
+};
+
+export function PopUp({
+  firstName,
+  lastName,
+  phoneNumber,
+  role,
+  message,
+  popUpConfirmationHandler,
+}) {
   return (
     <>
       <h1>Firstname={firstName}</h1>
@@ -8,8 +19,8 @@ export function PopUp({ firstName, lastName, phoneNumber, role, message }) {
       <h1>PhoneNumber={phoneNumber}</h1>
       <h1>Role={role}</h1>
       <h1>Message={message}</h1>
-      <button>Yes,I am sure</button>
-      <button>No, I don't want</button>
+      <button onClick={popUpConfirmationHandler}>Yes, I am sure</button>
+      <button onClick={closeHandler}>No, I don't want</button>
     </>
   );
 }

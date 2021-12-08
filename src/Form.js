@@ -1,7 +1,7 @@
 import React from "react";
-export function Form({ inputHandler, submitHandler }) {
+export function Form({ inputHandler, formSubmitHandler }) {
   return (
-    <form onSubmit={submitHandler}>
+    <form onSubmit={formSubmitHandler}>
       <label htmlFor="firstName">First name:</label>
       <input
         type="text"

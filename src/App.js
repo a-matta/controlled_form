@@ -22,20 +22,30 @@ export default class App extends Component {
     });
   };
 
-  submitHandler = (e) => {
+  formSubmitHandler = (e) => {
     e.preventDefault();
     this.setState({ showPopUp: true });
   };
 
+  popUpConfirmationHandler = (e) => {
+    console.log("Popup was submitted");
+    this.setState({ showPopUp: false });
+    window.location.reload();
+  };
   render() {
     return (
       <div>
         <Form
           inputHandler={this.inputHandler}
-          submitHandler={this.submitHandler}
+          formSubmitHandler={this.formSubmitHandler}
         />
         <View {...this.state.input} />
-        {this.state.showPopUp && <PopUp {...this.state.input} />}
+        {this.state.showPopUp && (
+          <PopUp
+            {...this.state.input}
+            popUpConfirmationHandler={this.popUpConfirmationHandler}
+          />
+        )}
       </div>
     );
   }
