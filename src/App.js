@@ -1,7 +1,9 @@
+import { Notes } from "./Notes";
 import { Form } from "./Form";
 import { View } from "./View";
 import React, { Component } from "react";
 import { PopUp } from "./PopUp";
+import axios from "axios";
 
 export default class App extends Component {
   state = {
@@ -14,6 +16,7 @@ export default class App extends Component {
     },
 
     showPopUp: false,
+    results: [],
   };
 
   inputHandler = (e) => {
@@ -28,10 +31,19 @@ export default class App extends Component {
   };
 
   popUpConfirmationHandler = (e) => {
-    console.log("Popup was submitted");
     this.setState({ showPopUp: false });
+    axios.post("http://localhost:3001/notes", this.state.input).then((res) => {
+      this.setState({ showPopUp: false });
+    });
     window.location.reload();
   };
+
+  componentDidMount() {
+    axios.get("http://localhost:3001/notes").then((res) => {
+      this.setState({ results: res.data });
+    });
+  }
+
   render() {
     return (
       <div>
@@ -46,6 +58,9 @@ export default class App extends Component {
             popUpConfirmationHandler={this.popUpConfirmationHandler}
           />
         )}
+        {this.state.results.map((item) => (
+          <Notes key={item.id} {...item} />
+        ))}
       </div>
     );
   }

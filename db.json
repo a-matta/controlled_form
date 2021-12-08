@@ -2,11 +2,19 @@
   "notes": [
     {
       "id": 1,
-      "firstname": "Luke",
-      "lastname": "Hodgson",
-      "phonenumber": "3043938720",
+      "firstName": "Luke",
+      "lastName": "Hodgson",
+      "phoneNumber": "3043938720",
       "role": "teacher",
       "message": "I was generated with fakenamegenerator.com"
+    },
+    {
+      "id": 2,
+      "firstName": "Mitchell",
+      "lastName": "Terrence",
+      "phoneNumber": "973-203-8312",
+      "role": "teacher",
+      "message": "cleanyard.com"
     }
   ]
 }
