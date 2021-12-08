@@ -8,6 +8,7 @@ export function Form({ inputHandler, formSubmitHandler }) {
         id="firstName"
         name="firstName"
         onChange={inputHandler}
+        required
       />
 
       <label htmlFor="lastName">Last name:</label>
@@ -16,6 +17,7 @@ export function Form({ inputHandler, formSubmitHandler }) {
         id="lastName"
         name="lastName"
         onChange={inputHandler}
+        required
       />
 
       <label htmlFor="phoneNumber">Phone Number:</label>
@@ -24,10 +26,11 @@ export function Form({ inputHandler, formSubmitHandler }) {
         id="phoneNumber"
         name="phoneNumber"
         onChange={inputHandler}
+        required
       />
 
       <label htmlFor="role">Role:</label>
-      <select name="role" id="role" onChange={inputHandler}>
+      <select name="role" id="role" onChange={inputHandler} required>
         <option value="">Choose role</option>
         <option value="teacher">Teacher</option>
         <option value="developer">Developer</option>
@@ -42,6 +45,7 @@ export function Form({ inputHandler, formSubmitHandler }) {
         cols="50"
         placeholder="Add message here.."
         onChange={inputHandler}
+        required
       />
 
       <button type="submit">Submit</button>
