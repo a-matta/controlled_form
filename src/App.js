@@ -46,22 +46,26 @@ export default class App extends Component {
 
   render() {
     return (
-      <div className="form-wrapper">
-        <Form
-          inputHandler={this.inputHandler}
-          formSubmitHandler={this.formSubmitHandler}
-        />
-        <View {...this.state.input} />
-        {this.state.showPopUp && (
-          <PopUp
-            {...this.state.input}
-            popUpConfirmationHandler={this.popUpConfirmationHandler}
+      <>
+        <div className="form-wrapper">
+          <Form
+            inputHandler={this.inputHandler}
+            formSubmitHandler={this.formSubmitHandler}
           />
-        )}
-        {this.state.results.map((item) => (
-          <Note key={item.id} {...item} />
-        ))}
-      </div>
+          <View {...this.state.input} />
+          {this.state.showPopUp && (
+            <PopUp
+              {...this.state.input}
+              popUpConfirmationHandler={this.popUpConfirmationHandler}
+            />
+          )}
+        </div>
+        <div className="notes-wrapper">
+          {this.state.results.map((item) => (
+            <Note key={item.id} {...item} />
+          ))}
+        </div>
+      </>
     );
   }
 }

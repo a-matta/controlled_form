@@ -40,6 +40,13 @@ label {
 form div {
   margin: 1rem 0;
 }
+
+.submit-button {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
 input,
 textarea,
 select {
@@ -60,7 +67,10 @@ select {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  align-items: center;
+  justify-content: center;
 }
+
 /********* VIEW: **********/
 
 .view {
@@ -170,4 +180,25 @@ select {
   font-weight: bold;
   text-decoration: none;
   color: #333;
+}
+
+.notes-wrapper {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-content: space-evenly;
+}
+
+.note {
+  margin: 1rem 1rem;
+  padding: 2rem;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+}
+
+.note p {
+  font-size: 15px;
+  color: #3f5efb;
+}
+.note h1 {
+  font-size: 20px;
 }

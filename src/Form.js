@@ -53,10 +53,11 @@ export function Form({ inputHandler, formSubmitHandler }) {
           required
         />
       </div>
-
-      <button className="form-button" type="submit">
-        Submit
-      </button>
+      <div className="submit-button">
+        <button className="form-button" type="submit">
+          Submit
+        </button>
+      </div>
     </form>
   );
 }
