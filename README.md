@@ -18,6 +18,6 @@ This application uses [ReactJs](https://reactjs.org), [JSON Server](https://gith
 ## Screenshot
 
 ![screenshot](Form.png?raw=true "Screenshot of form application")
-![screenshot](Note.png?raw=true "Screenshot of form application")
 ![screenshot](View.png?raw=true "Screenshot of form application")
+![screenshot](Note.png?raw=true "Screenshot of form application")
 ![screenshot](db.png?raw=true "Screenshot of form application")
