@@ -6,7 +6,7 @@
       "lastName": "Hodgson",
       "phoneNumber": "3043938720",
       "role": "teacher",
-      "message": "I was generated with fakenamegenerator.com"
+      "message": "We have a lot of rain in June. "
     },
     {
       "id": 2,
@@ -14,7 +14,23 @@
       "lastName": "Terrence",
       "phoneNumber": "973-203-8312",
       "role": "teacher",
-      "message": "cleanyard.com"
+      "message": "The lake is a long way from here."
+    },
+    {
+      "id": 3,
+      "firstName": "Gary",
+      "lastName": "Jones",
+      "phoneNumber": "920-925-3968",
+      "role": "developer",
+      "message": "The mysterious diary records the voice."
+    },
+    {
+      "firstName": "poetry",
+      "lastName": "victory",
+      "phoneNumber": "98-76-256",
+      "role": "developer",
+      "message": "Bill ran from the giraffe toward the dolphin.",
+      "id": 4
     }
   ]
 }

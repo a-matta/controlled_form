@@ -64,6 +64,7 @@ export default class App extends Component {
           {this.state.results.map((item) => (
             <Note key={item.id} {...item} />
           ))}
+          <footer>&copy; Copyright 2021 Amrita Matta</footer>
         </div>
       </>
     );

@@ -10,14 +10,10 @@
   display: flex;
   background-color: #3f5efb;
   width: 100%;
-  background: linear-gradient(
-    0deg,
-    rgba(34, 193, 195, 1) 0%,
-    rgba(77, 187, 145, 1) 31%,
-    rgba(84, 186, 137, 1) 36%,
-    rgba(108, 182, 110, 1) 53%,
-    rgba(119, 180, 97, 1) 61%,
-    rgba(173, 173, 34, 1) 100%
+  background: radial-gradient(
+    circle,
+    rgba(181, 63, 251, 1) 0%,
+    rgba(182, 212, 255, 1) 100%
   );
 }
 
@@ -27,6 +23,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+footer {
+  position: fixed;
+  height: 50px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  align-items: center;
+}
 /******* FORM: ******/
 
 form {
@@ -201,4 +207,9 @@ select {
 }
 .note h1 {
   font-size: 20px;
+}
+
+.note h3 {
+  color: gray;
+  font-size: 14px;
 }
