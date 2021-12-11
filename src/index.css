@@ -114,13 +114,16 @@ select {
   position: relative;
   top: 0;
   left: 0;
-  height: 50%;
-  width: 50%;
-  background-color: white;
+  height: 25rem;
+  width: 40rem;
+  background-color: #f0e69c;
   padding: 2rem;
   box-shadow: 0 0 5px #333;
   margin: 0 auto;
+  border-radius: 15px;
+  font-weight: bold;
 }
+
 .popup p {
   padding: 1rem 0;
 }
@@ -132,4 +135,39 @@ select {
 
 .notes {
   margin: 4rem;
+}
+
+.popup-confirm-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.popup-deny-button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-close-button {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
 }
