@@ -1,7 +1,7 @@
 import React from "react";
-export function Notes({ id, firstName, lastName, phoneNumber, role, message }) {
+export function Note({ id, firstName, lastName, phoneNumber, role, message }) {
   return (
-    <div key={id}>
+    <div key={id} className="note">
       <p>{firstName}</p>
       <p>{lastName}</p>
       <p>{phoneNumber}</p>

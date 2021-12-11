@@ -1,4 +1,4 @@
-import { Notes } from "./Notes";
+import { Note } from "./Note";
 import { Form } from "./Form";
 import { View } from "./View";
 import React, { Component } from "react";
@@ -46,7 +46,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="form-wrapper">
         <Form
           inputHandler={this.inputHandler}
           formSubmitHandler={this.formSubmitHandler}
@@ -59,7 +59,7 @@ export default class App extends Component {
           />
         )}
         {this.state.results.map((item) => (
-          <Notes key={item.id} {...item} />
+          <Note key={item.id} {...item} />
         ))}
       </div>
     );
